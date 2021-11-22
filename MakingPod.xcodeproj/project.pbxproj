@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CF78E79927484EB200621FA7 /* MakingPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78E79827484EB200621FA7 /* MakingPodTests.swift */; };
 		CF78E7CF27484FF800621FA7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78E7CE27484FF800621FA7 /* UIButton+Extension.swift */; };
+		CFA8FE8F274C16D700A502AC /* MakingPodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8FE8E274C16D600A502AC /* MakingPodViewController.swift */; };
+		CFA8FE91274C16E200A502AC /* MakingPodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8FE90274C16E200A502AC /* MakingPodViewModel.swift */; };
+		CFA8FE93274C16EE00A502AC /* MakingPodViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8FE92274C16EE00A502AC /* MakingPodViewModelProtocol.swift */; };
+		CFA8FE95274C171B00A502AC /* MakingPodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8FE94274C171B00A502AC /* MakingPodView.swift */; };
+		CFA8FE98274C1AB500A502AC /* MakingPodViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8FE97274C1AB400A502AC /* MakingPodViewBuilder.swift */; };
+		CFA8FE9A274C1C1500A502AC /* MakingPodDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8FE99274C1C1500A502AC /* MakingPodDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +40,14 @@
 		CF78E79A27484EB200621FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF78E7C427484EE000621FA7 /* SamplePod.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SamplePod.xcodeproj; path = SamplePod/SamplePod.xcodeproj; sourceTree = "<group>"; };
 		CF78E7CE27484FF800621FA7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
-		CF78E7D027484FF800621FA7 /* MakingPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MakingPodTests.xctest; path = "/Users/joao/Documents/Projects/Modularização Exemple/MakingPod/build/Debug-iphoneos/MakingPodTests.xctest"; sourceTree = "<absolute>"; };
 		CF78E7D1274854F200621FA7 /* MakingPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MakingPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA8FE8C274C0B6F00A502AC /* MakingPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakingPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA8FE8E274C16D600A502AC /* MakingPodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingPodViewController.swift; sourceTree = "<group>"; };
+		CFA8FE90274C16E200A502AC /* MakingPodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingPodViewModel.swift; sourceTree = "<group>"; };
+		CFA8FE92274C16EE00A502AC /* MakingPodViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingPodViewModelProtocol.swift; sourceTree = "<group>"; };
+		CFA8FE94274C171B00A502AC /* MakingPodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingPodView.swift; sourceTree = "<group>"; };
+		CFA8FE97274C1AB400A502AC /* MakingPodViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingPodViewBuilder.swift; sourceTree = "<group>"; };
+		CFA8FE99274C1C1500A502AC /* MakingPodDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingPodDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +75,14 @@
 				CF78E79727484EB200621FA7 /* MakingPodTests */,
 				CF78E7C427484EE000621FA7 /* SamplePod.xcodeproj */,
 				CF78E7D1274854F200621FA7 /* MakingPod.framework */,
+				CFA8FE8C274C0B6F00A502AC /* MakingPodTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		CF78E78C27484EB200621FA7 /* MakingPod */ = {
 			isa = PBXGroup;
 			children = (
+				CFA8FE96274C173500A502AC /* MakingPodView */,
 				CF78E78E27484EB200621FA7 /* Info.plist */,
 				CF78E7CE27484FF800621FA7 /* UIButton+Extension.swift */,
 			);
@@ -90,6 +104,19 @@
 				CF78E7C927484EE100621FA7 /* SamplePod.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CFA8FE96274C173500A502AC /* MakingPodView */ = {
+			isa = PBXGroup;
+			children = (
+				CFA8FE8E274C16D600A502AC /* MakingPodViewController.swift */,
+				CFA8FE90274C16E200A502AC /* MakingPodViewModel.swift */,
+				CFA8FE92274C16EE00A502AC /* MakingPodViewModelProtocol.swift */,
+				CFA8FE94274C171B00A502AC /* MakingPodView.swift */,
+				CFA8FE97274C1AB400A502AC /* MakingPodViewBuilder.swift */,
+				CFA8FE99274C1C1500A502AC /* MakingPodDTO.swift */,
+			);
+			path = MakingPodView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +166,7 @@
 			);
 			name = MakingPodTests;
 			productName = MakingPodTests;
-			productReference = CF78E7D027484FF800621FA7 /* MakingPodTests.xctest */;
+			productReference = CFA8FE8C274C0B6F00A502AC /* MakingPodTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA8FE91274C16E200A502AC /* MakingPodViewModel.swift in Sources */,
 				CF78E7CF27484FF800621FA7 /* UIButton+Extension.swift in Sources */,
+				CFA8FE93274C16EE00A502AC /* MakingPodViewModelProtocol.swift in Sources */,
+				CFA8FE8F274C16D700A502AC /* MakingPodViewController.swift in Sources */,
+				CFA8FE95274C171B00A502AC /* MakingPodView.swift in Sources */,
+				CFA8FE98274C1AB500A502AC /* MakingPodViewBuilder.swift in Sources */,
+				CFA8FE9A274C1C1500A502AC /* MakingPodDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
